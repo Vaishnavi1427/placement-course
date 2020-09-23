@@ -1,0 +1,16 @@
+title: placement
+description: it is a repository for the preparation of my placements.
+template:
+  repo: placement-template
+  name: placement
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
